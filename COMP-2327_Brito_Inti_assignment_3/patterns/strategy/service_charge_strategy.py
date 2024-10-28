@@ -1,3 +1,8 @@
+"""
+Description: Abstract base class for service charge calculation strategies.
+Author: Inti Brito Diaz
+Date: 2024-10-21
+"""
 
 from abc import ABC, abstractmethod
 
@@ -6,7 +11,4 @@ class ServiceChargeStrategy(ABC):
 
     @abstractmethod
     def calculate_service_charges(self, balance: float) -> float:
-        """
-        Abstract method to be implemented by subclasses to calculate service charges.
-        """
         pass

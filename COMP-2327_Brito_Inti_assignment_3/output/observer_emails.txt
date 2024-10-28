@@ -158,3 +158,208 @@ To: 1002@example.com
 Subject: ALERT: Unusual Activity: 2024-10-25 20:01:59.920586
 Message: Notification for 1002: Jane Smith: Large transaction $6000: on account 6002.
 ---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-25 20:21:25.656504
+Message: Notification for 1001: John Doe: Low balance warning $-100.00: on account 5001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-25 20:21:25.665611
+Message: Notification for 1001: John Doe: Low balance warning $-100.00: on account 6001.
+---
+---
+To: 1002@example.com
+Subject: ALERT: Unusual Activity: 2024-10-25 20:21:25.672931
+Message: Notification for 1002: Jane Smith: Low balance warning $-100.00: on account 6002.
+---
+---
+To: 1002@example.com
+Subject: ALERT: Unusual Activity: 2024-10-25 20:21:25.676542
+Message: Notification for 1002: Jane Smith: Large transaction $6000.00: on account 6002.
+---
+---
+To: 1002@example.com
+Subject: ALERT: Unusual Activity: 2024-10-25 20:26:19.499115
+Message: Notification for 1002: Jane Smith: Large transaction $6000.00: on account 6002.
+---
+---
+To: 1002@example.com
+Subject: ALERT: Unusual Activity: 2024-10-25 20:50:46.663048
+Message: Notification for 1002: Jane Smith: Large transaction $6000.00: on account 6002.
+---
+---
+To: 1002@example.com
+Subject: ALERT: Unusual Activity: 2024-10-25 20:54:15.685494
+Message: Notification for 1002: Jane Smith: Large transaction $6000.00: on account 6002.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 17:40:28.808184
+Message: Notification for 1001: John Doe: Low balance warning $-100.00: on account 5001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 17:40:28.823831
+Message: Notification for 1001: John Doe: Low balance warning $-100.00: on account 6001.
+---
+---
+To: 1002@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 17:40:28.833057
+Message: Notification for 1002: Jane Smith: Low balance warning $-100.00: on account 6002.
+---
+---
+To: 1002@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 17:40:28.837198
+Message: Notification for 1002: Jane Smith: Large transaction $6000.00: on account 6002.
+---
+---
+To: 10001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 17:54:36.361225
+Message: Notification for 10001: John Doe: Low balance warning $50.00: on account 20001.
+---
+---
+To: 10001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:24:03.605049
+Message: Notification for 10001: John Doe: Low balance warning $50.00: on account 20001.
+---
+---
+To: 10001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:25:49.791180
+Message: Notification for 10001: John Doe: Low balance warning $50.00: on account 20001.
+---
+---
+To: 10001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:26:27.880540
+Message: Notification for 10001: John Doe: Low balance warning $50.00: on account 20001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:40:35.859835
+Message: Notification for 1001: John Doe: Large transaction $6000.00: on account CH001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:40:35.863116
+Message: Notification for 1001: John Doe: Large transaction $6500.00: on account CH001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:40:35.869001
+Message: Notification for 1001: John Doe: Low balance warning $50.00: on account SV001.
+---
+---
+To: 10001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:41:16.169897
+Message: Notification for 10001: John Doe: Low balance warning $50.00: on account 20001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:41:25.984439
+Message: Notification for 1001: John Doe: Large transaction $6000.00: on account CH001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:41:25.988417
+Message: Notification for 1001: John Doe: Large transaction $6500.00: on account CH001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:41:25.993150
+Message: Notification for 1001: John Doe: Low balance warning $50.00: on account SV001.
+---
+---
+To: 10001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:46:25.678381
+Message: Notification for 10001: John Doe: Low balance warning $50.00: on account 20001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:46:47.630998
+Message: Notification for 1001: John Doe: Large transaction $6000.00: on account CH001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:46:47.634959
+Message: Notification for 1001: John Doe: Large transaction $6500.00: on account CH001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:46:47.640113
+Message: Notification for 1001: John Doe: Low balance warning $50.00: on account SV001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:46:58.108408
+Message: Notification for 1001: John Doe: Large transaction $6000.00: on account CH001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:46:58.111681
+Message: Notification for 1001: John Doe: Large transaction $6500.00: on account CH001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:46:58.115684
+Message: Notification for 1001: John Doe: Low balance warning $50.00: on account SV001.
+---
+---
+To: 10001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:51:51.196776
+Message: Notification for 10001: John Doe: Low balance warning $50.00: on account 20001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:52:22.926880
+Message: Notification for 1001: John Doe: Large transaction $6000.00: on account CH001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:52:22.929946
+Message: Notification for 1001: John Doe: Large transaction $6500.00: on account CH001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:52:22.935685
+Message: Notification for 1001: John Doe: Low balance warning $50.00: on account SV001.
+---
+---
+To: 10001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:59:13.923360
+Message: Notification for 10001: John Doe: Low balance warning $50.00: on account 20001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:59:25.017875
+Message: Notification for 1001: John Doe: Large transaction $6000.00: on account CH001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:59:25.022308
+Message: Notification for 1001: John Doe: Large transaction $6500.00: on account CH001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 18:59:25.028025
+Message: Notification for 1001: John Doe: Low balance warning $50.00: on account SV001.
+---
+---
+To: 10001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 19:02:56.533739
+Message: Notification for 10001: John Doe: Low balance warning $50.00: on account 20001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 19:03:13.370802
+Message: Notification for 1001: John Doe: Large transaction $6000.00: on account CH001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 19:03:13.373913
+Message: Notification for 1001: John Doe: Large transaction $6500.00: on account CH001.
+---
+---
+To: 1001@example.com
+Subject: ALERT: Unusual Activity: 2024-10-27 19:03:13.378243
+Message: Notification for 1001: John Doe: Low balance warning $50.00: on account SV001.
+---

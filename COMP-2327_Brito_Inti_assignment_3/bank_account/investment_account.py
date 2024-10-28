@@ -1,20 +1,27 @@
-from bank_account import BankAccount
-from datetime import datetime, timedelta
+"""
+Description: InvestmentAccount class implementing Strategy Pattern for service charges.
+Author: Inti Brito Diaz
+Date: 2024-10-27
+"""
+
+from .bank_account import BankAccount
+from patterns.strategy.management_fee_strategy import ManagementFeeStrategy
+from datetime import date
 
 class InvestmentAccount(BankAccount):
-    TWENTY_YEARS_AGO = datetime.now() - timedelta(days=365*20)
+    def __init__(self, account_number: str, balance: float, open_date: date):
+        super().__init__(account_number, balance)
+        self._open_date = open_date
+        self._service_charge_strategy = ManagementFeeStrategy(management_fee=10.00, account_open_date=open_date)
 
-    def __init__(self, account_number: str, balance: float, interest_rate, open_date: datetime):
-        super().__init__(account_number, balance, interest_rate, open_date)
+    def get_service_charges(self) -> float:
+        return self._service_charge_strategy.calculate_service_charges(self.balance)
 
-    def get_balance(self):
-        return self.balance
+    def withdraw(self, amount: float) -> None:
+        self.update_balance(-amount)
 
-    def withdraw(self, amount):
-        super().withdraw(amount)
+    def deposit(self, amount: float) -> None:
+        self.update_balance(amount)
 
-    def deposit(self, amount):
-        super().deposit(amount)
-
-    def __str__(self):
-        return f"{self.account_number}: {self.balance:.2f}"
+    def __str__(self) -> str:
+        return f"Investment Account {self.account_number}: Balance ${self.balance:.2f}"
