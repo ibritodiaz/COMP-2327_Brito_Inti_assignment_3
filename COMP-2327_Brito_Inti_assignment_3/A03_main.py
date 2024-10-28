@@ -3,55 +3,50 @@ Description: A client program written to verify implementation
 of the Observer Pattern.
 Author: ACE Faculty
 Edited by: Inti Brito Diaz
-Date: 2024-10-21
+Date: 2024-10-27
 """
 
-# 1.  Import all BankAccount types using the bank_account package
-#     Import date
-#     Import Client
+from bank_account.chequing_account import ChequingAccount
+from bank_account.savings_account import SavingsAccount
+from bank_account.investment_account import InvestmentAccount
+from client.client import Client
+from datetime import date, timedelta
 
+def main():
+    try:
+        print("Starting the program...")
 
+        # Create clients
+        client1 = Client(1001, "John", "Doe")
+        print(f"Created client1: {client1}")
+        
+        client2 = Client(1002, "Jane", "Smith")
+        print(f"Created client2: {client2}")
 
+        # Create bank accounts
+        chequing = ChequingAccount("CH001", 1000.00, 500.00)
+        savings = SavingsAccount("SV001", 2000.00, 0.02)
+        investment = InvestmentAccount("IN001", 5000.00, date.today() - timedelta(days=365*5))
 
+        # Attach clients to accounts
+        chequing.attach(client1)
+        savings.attach(client1)
+        investment.attach(client2)
 
+        # Perform transactions
+        print("\nPerforming transactions on ChequingAccount (Client 1):")
+        chequing.deposit(6000.00)  # Should trigger large transaction notification
+        chequing.withdraw(6500.00)  # Should trigger large transaction and low balance notifications
+        
+        print("\nPerforming transactions on SavingsAccount (Client 1):")
+        savings.withdraw(1950.00)  # Should trigger low balance notification
+        
+        print("\nPerforming transactions on InvestmentAccount (Client 2):")
+        investment.withdraw(4900.00)  # Should trigger low balance notification
 
-# 2. Create a Client object with data of your choice.
+        print("Program completed successfully.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
-
-
-
-# 3a. Create a ChequingAccount object with data of your choice, using the client_number 
-# of the client created in step 2.
-# 3b. Create a SavingsAccount object with data of your choice, using the client_number 
-# of the client created in step 2.
-
-
-
-
-
-# 4 The ChequingAccount and SavingsAccount objects are 'Subject' objects.
-# The Client object is an 'Observer' object.  
-# 4a.  Attach the Client object (created in step 1) to the ChequingAccount object (created in step 2).
-# 4a.  Attach the Client object (created in step 1) to the SavingsAccount object (created in step 2).
-
-
-
-
-
-# 5a. Create a second Client object with data of your choice.
-# 5b. Create a SavingsAccount object with data of your choice, using the client_number 
-# of the client created in this step.
-
-
-
-
-# 6. Use the ChequingAccount and SavingsAccount objects created 
-# in steps 3 and 5 above to perform transactions (deposits and withdraws) 
-# which would cause the Subject (BankAccount) to notify the Observer 
-# (Client) as well as transactions that would not 
-# cause the Subject to notify the Observer.  Ensure each 
-# BankAccount object performs at least 3 transactions.
-# REMINDER: the deposit() and withdraw() methods can raise exceptions
-# ensure the methods are invoked using proper exception handling such 
-# that any exception messages are printed to the console.
-
+if __name__ == "__main__":
+    main()
